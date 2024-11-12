@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <header class="bg-pink-200 text-pink-500 font-extrabold p-4">
+        <nav>
+            <ul class="flex justify-center space-x-8">
+                <li><a href="index.html" class="hover:text-white">Home</a></li>
+                <li><a href="about.html" class="hover:text-white">About</a></li>
+                <li><a href="skills.html" class="hover:text-white">Skills</a></li>
+                <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="py-12 flex-grow">
+        <section id="skill" class="text-center max-w-4xl mx-auto p-6">
+            <h2 class="text-3xl font-bold mb-6"><span class="text-pink-600">Skills</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Skill 1: Computer System Servicing -->
+                <div class="skill-box p-4 border border-pink-600 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <div class="skill-info">
+                        <i class="bx bx-hardware-chip text-4xl text-pink-500 mb-4"></i> <!-- Replace with actual icon class -->
+                        <h4 class="font-semibold text-xl text-gray-800 mb-2">Computer System Servicing</h4>
+                        <p class="text-gray-600">Certified NC II passer in Computer System Servicing (2020), demonstrating expertise in hardware maintenance and troubleshooting.</p>
+                    </div>
+                </div>
+
+                <!-- Skill 2: Writing -->
+                <div class="skill-box p-4 border border-pink-600 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <div class="skill-info">
+                        <i class="bx bx-pencil text-4xl text-pink-500 mb-4"></i> <!-- Replace with actual icon class -->
+                        <h4 class="font-semibold text-xl text-gray-800 mb-2">Writing</h4>
+                        <p class="text-gray-600">A passionate writer of Tagalog poems, expressing thoughts and emotions through creative verse in my free time.</p>
+                    </div>
+                </div>
+
+                <!-- Skill 3: Digital Art -->
+                <div class="skill-box p-4 border border-pink-600 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <div class="skill-info">
+                        <i class="bx bx-paint text-4xl text-pink-500 mb-4"></i> <!-- Replace with actual icon class -->
+                        <h4 class="font-semibold text-xl text-gray-800 mb-2">Digital Art</h4>
+                        <p class="text-gray-600">Proficient in Ibis Paint, with experience creating digital art pieces. Although currently inactive, I'm eager to explore new creative opportunities.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-pink-200 text-pink-500 py-4 mt-auto text-center font-extrabold">
+        <p>&copy; 2024 Joanna Miccaella Bustero</p>
+    </footer>
+    
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navbar = document.querySelector('nav');
+    
+        menuIcon.addEventListener('click', () => {
+          navbar.classList.toggle('hidden');
+        });
+      </script>
+    
+</body>
+</html>

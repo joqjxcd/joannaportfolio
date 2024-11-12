@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* Adding full height for html and body */
+        html, body {
+            height: 100%;
+        }
+
+        /* Define light color to make sure hover shadows work properly */
+        :root {
+            --light-color: #f5a5d5;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-pink-500 flex flex-col min-h-screen">
+
+    <header class="bg-pink-200 text-pink-500 font-extrabold p-4">
+        <nav>
+            <ul class="flex justify-center space-x-8">
+                <li><a href="index.html" class="hover:text-white">Home</a></li>
+                <li><a href="about.html" class="hover:text-white">About</a></li>
+                <li><a href="skills.html" class="hover:text-white">Skills</a></li>
+                <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="py-12 flex-grow">
+        <section class="about bg-gray-50 flex justify-center items-center gap-40 py-12">
+        
+            <!-- About Content Section -->
+            <div class="about-content text-center ">
+                <h2 class="text-7xl font-semibold text-pink-500 mb-4">About Me</h2>
+                <p class="bg-white p-5 border-4 border-pink-400 rounded-xl shadow-lg max-w-3xl mx-auto mt-12 text-xl text-gray-700 mb-6">
+                    Hello, I'm Joanna Miccaella Bustero, a 22-year-old from Bacoor, Cavite. 
+                    With a passion for words and creative expression, I'm excited to share my skills and experiences with you.
+                    Feel free to explore my skills, projects, and get in touch!
+                </p>
+                <a href="contact.html" class="btn bg-gradient-to-r from-pink-500 to-pink-600 text-white py-3 px-6 rounded-full text-lg font-semibold hover:bg-pink-700">Get in Touch</a>
+            </div>
+            
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-pink-200 text-pink-500 py-4 mt-auto text-center font-extrabold">
+        <p>&copy; 2024 Joanna Miccaella Bustero</p>
+    </footer>
+
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navbar = document.querySelector('nav');
+    
+        menuIcon.addEventListener('click', () => {
+          navbar.classList.toggle('hidden');
+        });
+      </script>
+    
+</body>
+</html>

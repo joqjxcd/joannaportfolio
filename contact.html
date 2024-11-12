@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <header class="bg-pink-200 text-pink-500 font-extrabold p-4">
+        <nav>
+            <ul class="flex justify-center space-x-8">
+                <li><a href="index.html" class="hover:text-white">Home</a></li>
+                <li><a href="about.html" class="hover:text-white">About</a></li>
+                <li><a href="skills.html" class="hover:text-white">Skills</a></li>
+                <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="py-12 flex-grow">
+        <section class="text-center max-w-3xl mx-auto p-6">
+            <h1 class="text-3xl text-pink-500 font-bold mb-6">Contact Me</h1>
+            <p class="text-lg mb-6">If you'd like to work with me or just want to chat, feel free to reach out!</p>
+            
+            <!-- Formspree integration -->
+            <form action="https://formspree.io/f/xyzyjkvn" method="POST" class="space-y-6">
+                
+                <!-- Email input -->
+                <div>
+                    <label for="email" class="block text-left text-lg font-semibold text-gray-700">Your Email:</label>
+                    <input type="email" id="email" name="email" required class="w-full p-3 border border-pink-500 rounded-lg focus:ring-2 focus:ring-pink-500 outline-none transition-all">
+                </div>
+
+                <!-- Message textarea -->
+                <div>
+                    <label for="message" class="block text-left text-lg font-semibold text-gray-700">Your Message:</label>
+                    <textarea id="message" name="message" required class="w-full p-3 border border-pink-500 rounded-lg focus:ring-2 focus:ring-pink-500 outline-none transition-all"></textarea>
+                </div>
+
+                <!-- Submit button -->
+                <div class="text-center">
+                    <button type="submit" class="bg-gradient-to-r from-pink-500 to-pink-600 text-white py-3 px-6 rounded-full text-lg font-semibold hover:bg-pink-700 transition-all focus:outline-none">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-pink-200 text-pink-500 py-4 mt-auto text-center font-extrabold">
+        <p>&copy; 2024 Joanna Miccaella Bustero</p>
+    </footer>
+
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navbar = document.querySelector('nav');
+    
+        menuIcon.addEventListener('click', () => {
+          navbar.classList.toggle('hidden');
+        });
+      </script>
+    
+</body>
+</html>
